@@ -1,0 +1,278 @@
+<html><head><base href="https://resolust.com/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RESOLUST - Mantenimiento General para Edificios y Equipos en Hotelería</title><style>
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #f8f9fa;
+    --text-color: #333;
+    --accent-color: #ffc107;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+}
+
+.logo p {
+    font-size: 1rem;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#ffc107"/>
+                    <text x="50" y="50" font-family="Arial" font-size="40" fill="#0056b3" text-anchor="middle" dominant-baseline="central">R</text>
+                </svg>
+                <div>
+                    <h1>RESOLUST</h1>
+                    <p>Mantenimiento General para Edificios y Equipos en Hotelería</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="home">
+                <h2>Bienvenidos a RESOLUST</h2>
+                <p>En RESOLUST, nos especializamos en proporcionar servicios de mantenimiento general de alta calidad para edificios y equipos en el sector hotelero. Nuestro equipo de expertos, liderado por el ING. DAVID TORRES, está comprometido con la excelencia y la satisfacción del cliente.</p>
+            </section>
+
+            <section id="services">
+                <h2>Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fas fa-building"></i>
+                        <h3>Mantenimiento general de edificios</h3>
+                        <p>Cuidado integral para mantener sus instalaciones en óptimas condiciones.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-fire"></i>
+                        <h3>Mantenimiento de calderas</h3>
+                        <p>Servicio especializado para garantizar la eficiencia y seguridad de sus calderas.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-tshirt"></i>
+                        <h3>Mantenimiento de secadoras</h3>
+                        <p>Cuidado experto para mantener sus secadoras funcionando de manera óptima.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-washing-machine"></i>
+                        <h3>Mantenimiento de lavadoras</h3>
+                        <p>Servicio profesional para asegurar el rendimiento de sus lavadoras.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-water"></i>
+                        <h3>Mantenimiento de bombas</h3>
+                        <p>Cuidado especializado para mantener sus sistemas de bombeo en perfecto estado.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-wind"></i>
+                        <h3>Mantenimiento de filtros de aire acondicionado</h3>
+                        <p>Servicio para garantizar la calidad del aire y la eficiencia energética.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-soap"></i>
+                        <h3>Centros de lavado</h3>
+                        <p>Mantenimiento integral para sus centros de lavado comerciales.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-concierge-bell"></i>
+                        <h3>Otros servicios hoteleros</h3>
+                        <p>Soluciones personalizadas para todas sus necesidades de mantenimiento en hotelería.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contacto</h2>
+                <p>Teléfono: 6141001882</p>
+                <p>Email: davidalonsotorres90@gmail.com</p>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="text" id="subject" name="subject" placeholder="Asunto" required>
+                    <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </section>
+
+            <section id="about">
+                <h2>Sobre Nosotros</h2>
+                <p>RESOLUST fue fundada por el ING. DAVID TORRES, un profesional con amplia experiencia en el campo del mantenimiento general. Nuestra misión es proporcionar servicios de mantenimiento de alta calidad, eficientes y confiables para el sector hotelero, garantizando el óptimo funcionamiento de sus instalaciones y equipos.</p>
+                <p>En RESOLUST, nos enorgullecemos de nuestro compromiso con la excelencia, la innovación y la satisfacción del cliente. Nuestro equipo de expertos está dedicado a ofrecer soluciones personalizadas que se adaptan a las necesidades específicas de cada cliente, asegurando el más alto nivel de calidad en todos nuestros servicios.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2023 RESOLUST. Todos los derechos reservados.</p>
+            <p>Teléfono: 6141001882 | Email: davidalonsotorres90@gmail.com</p>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && subject && message) {
+                alert('Gracias por su mensaje. Nos pondremos en contacto con usted pronto.');
+                form.reset();
+            } else {
+                alert('Por favor, complete todos los campos del formulario.');
+            }
+        });
+
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    });
+    </script>
+</body></html>
